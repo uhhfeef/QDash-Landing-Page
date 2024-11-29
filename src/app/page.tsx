@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, BarChart, PieChart, LineChart, Lock, Github, Upload, Database, Search, Shield, Cpu, MessageSquare } from 'lucide-react'
+import { ArrowRight, BarChart, PieChart, LineChart, Lock, Github, Upload, Database, Search, Shield, Cpu, MessageSquare, Check } from 'lucide-react'
 import { Badge } from "@/components/ui/badge"
 
 export default function LandingPage() {
@@ -24,11 +24,14 @@ export default function LandingPage() {
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
             Features
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#privacy">
-            Privacy
-          </Link>
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#how-it-works">
             How It Works
+          </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#pricing">
+            Pricing
+          </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#privacy">
+            Privacy
           </Link>
         </nav>
       </header>
@@ -175,11 +178,79 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-4">Simple, Transparent Pricing</h2>
+            <p className="text-gray-500 md:text-xl text-center mb-12 max-w-3xl mx-auto">
+              Choose the plan that's right for you. Start for free and scale as you grow.
+            </p>
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-start">
+              <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Self-Hosted</CardTitle>
+                  <CardDescription>Perfect for personal use or small teams</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-4xl font-bold mb-4">$0<span className="text-lg font-normal">/month</span></div>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>Host on your own platform or locally</span>
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>Free support for bug fixes</span>
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>Access to basic features</span>
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>Community support</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full mt-6">Get Started</Button>
+                </CardContent>
+              </Card>
+              <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow border-[rgb(38,98,217)]">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Cloud Hosted</CardTitle>
+                  <CardDescription>For users that need more power and support</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-4xl font-bold mb-4">$0<span className="text-lg font-normal">/month to start</span></div>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>1000 free requests</span>
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>Usage-based pricing after free tier</span>
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>Priority support</span>
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="mr-2 h-4 w-4 text-green-500" />
+                      <span>Custom integrations available</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full mt-6 bg-[rgb(38,98,217)] text-white hover:bg-[rgb(28,88,207)]">Get Started</Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to Analyze Your Data Securely?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Ready to Analyze Your Data Securely?
+                </h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                   Start creating beautiful dashboards with natural language queries, all while keeping your data private.
                 </p>
