@@ -191,7 +191,7 @@ export default function LandingPage() {
                   <CardDescription>Perfect for personal use or small teams</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-4xl font-bold mb-4">$0<span className="text-lg font-normal">/month</span></div>
+                  <div className="text-4xl font-bold mb-4">Free<span className="text-lg font-normal"></span></div>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <Check className="mr-2 h-4 w-4 text-green-500" />
@@ -210,7 +210,14 @@ export default function LandingPage() {
                       <span>Community support</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6">Get Started</Button>
+                  <Link 
+                    className="inline-flex h-10 w-full items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300 mt-6"
+                    href="https://github.com/uhhfeef/qdash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub
+                  </Link>
                 </CardContent>
               </Card>
               <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow border-[rgb(38,98,217)]">
@@ -238,7 +245,14 @@ export default function LandingPage() {
                       <span>Custom integrations available</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6 bg-[rgb(38,98,217)] text-white hover:bg-[rgb(28,88,207)]">Get Started</Button>
+                  <Link 
+                    className="inline-flex h-10 w-full items-center justify-center rounded-md bg-[rgb(38,98,217)] px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[rgb(28,88,207)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 mt-6"
+                    href="https://app.qdash.site"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Started
+                  </Link>
                 </CardContent>
               </Card>
             </div>
