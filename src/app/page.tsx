@@ -188,7 +188,7 @@ export default function LandingPage() {
               <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-2xl">Self-Hosted</CardTitle>
-                  <CardDescription>Perfect for personal use or small teams</CardDescription>
+                  <CardDescription>Perfect for personal use </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="text-4xl font-bold mb-4">Free<span className="text-lg font-normal"></span></div>
