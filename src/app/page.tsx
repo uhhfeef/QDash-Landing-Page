@@ -1,40 +1,15 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, BarChart, PieChart, LineChart, Lock, Github, Upload, Database, Search, Shield, Cpu, MessageSquare, Check } from 'lucide-react'
+import { ArrowRight, BarChart, Lock, Github, Upload, Shield, Cpu, MessageSquare, Check } from 'lucide-react'
 import { Badge } from "@/components/ui/badge"
+import { NavBar } from "@/components/NavBar"
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b">
-        <Link className="flex items-center space-x-2" href="#">
-          <Image 
-            src="/images/logo.png" 
-            alt="QDash Logo" 
-            width={32} 
-            height={32} 
-            className="object-contain"
-          />
-          <span className="text-2xl font-black tracking-tight font-outfit">QDash</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
-            Features
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#how-it-works">
-            How It Works
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#pricing">
-            Pricing
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#privacy">
-            Privacy
-          </Link>
-        </nav>
-      </header>
+      <NavBar />
       <main className="flex-1">
       <section className="w-full py-16 bg-gradient-to-b from-white via-blue-100 to-white">
           <div className="container px-4 md:px-6">
