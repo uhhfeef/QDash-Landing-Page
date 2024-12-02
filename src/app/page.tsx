@@ -205,7 +205,7 @@ export default function LandingPage() {
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span>1000 free requests</span>
+                      <span>500 free requests</span>
                     </li>
                     <li className="flex items-center">
                       <Check className="mr-2 h-4 w-4 text-green-500" />
